@@ -17,8 +17,8 @@ Traditional tourism portals are outdated and lack personalization. Travelers str
 
 **ExploreJH** is a smart tourism innovation platform designed to act as a **digital travel companion for Jharkhand visitors**.
 
----
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/87a36f5f-065d-4759-bda8-d3718eb3bb07" />
+<p align="center">
+<img width="936" height="580" alt="image" src="https://github.com/user-attachments/assets/87a36f5f-065d-4759-bda8-d3718eb3bb07" />
 
 ---
 
