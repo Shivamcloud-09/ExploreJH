@@ -95,6 +95,49 @@ Designed to enable:
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ ([Download](https://nodejs.org/))
+- npm or yarn
+- Git
+- Google AI API key ([Get free key](https://aistudio.google.com/apikey))
+
+### Setup & Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Shivamcloud-09/ExploreJH.git
+cd ExploreJH
+# Install dependencies
+npm install
+
+```
+
+#### Getting Your API Keys:
+
+**Gemini API:**
+1. Go to [Google AI Studio](https://aistudio.google.com/apikey)
+2. Click "Create API Key"
+3. Copy the generated key
+
+### Run the Application
+
+```bash
+# Development mode
+npm run dev
+
+# Production build
+npm run build
+npm start
+
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
 ## WorkFlow Diagram
 
 ---
@@ -265,17 +308,7 @@ Designed to enable:
 https://depict-forest-13891461.figma.site
 
 ```
----
 
-## Setup & Installation
-
-```bash
-git clone https://github.com/Shivamcloud-09/ExploreJH.git
-cd ExploreJH
-npm install
-npm run dev
-
-```
 ---
 
 ## Usage Instructions
