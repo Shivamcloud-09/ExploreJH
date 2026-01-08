@@ -308,15 +308,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## Deployed Prototype
-
-```
-https://depict-forest-13891461.figma.site
-
-```
-
----
-
 ## Usage Instructions
 
 1. Launch the web application  
