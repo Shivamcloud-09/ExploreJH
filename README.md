@@ -19,6 +19,7 @@ Traditional tourism portals are outdated and lack personalization. Travelers str
 
 ---
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/87a36f5f-065d-4759-bda8-d3718eb3bb07" />
+
 ---
 
 The platform enables travelers to explore trending destinations, discover hidden gems, experience the culture, and support local artisans — while laying groundwork for future smart tourism and AI-based travel assistance.
@@ -238,12 +239,23 @@ Designed to enable:
 
 ## Tech Stack
 
-* **Frontend:** React.js + TypeScript  
-* **UI Framework:** Tailwind CSS  
-* **Animations:** Framer Motion  
-* **Icons:** Lucide React  
-* **Architecture:** Modular Component Driven UI  
-* **Deployment Ready:** Vercel / Cloud Workstations  
+| Layer            | Technology                                   |
+|------------------|----------------------------------------------|
+| Frontend         | React.js, TypeScript                         |
+| UI / Styling     | Tailwind CSS, Framer Motion                  |
+| Icons            | Lucide React                                 |
+| AI Chatbot       | Rasa AI                                      |
+| AI Validation    | Google Gemini 2.5 Flash                      |
+| AR / VR          | Three.js                                     |
+| Authentication   | Supabase Auth                                |
+| Database         | Supabase (PostgreSQL)                        |
+| Blockchain       | Polygon (Mumbai), Hardhat                    |
+| OCR              | Tesseract.js                                 |
+| Payments         | Razorpay                                     |
+| Notifications    | Twilio (SMS / SOS)                           |
+| Maps & Geo       | Leaflet.js, OpenStreetMap                    |
+| Deployment       | Vercel / Cloud Workstations (IDX)            |
+ 
 
 ---
 
