@@ -16,6 +16,7 @@ Traditional tourism portals are outdated and lack personalization. Travelers str
 ## Project Overview
 
 **ExploreJH** is a smart tourism innovation platform designed to act as a **digital travel companion for Jharkhand visitors**.
+
 ---
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/87a36f5f-065d-4759-bda8-d3718eb3bb07" />
 ---
@@ -89,6 +90,68 @@ Designed to enable:
 
 > ExploreJH is not just a tourism website —  
 > It is a **smart digital tourism platform** built to enhance traveler experience, preserve culture, and create real-world social impact.
+
+---
+
+## WorkFlow Diagram
+
+---
+
+flowchart TD
+
+%% Title Node
+A[EXPLOREJH WORKFLOW]
+
+%% User Entry
+A --> B[USER]
+
+%% Step 1
+B --> C[1. SIGN UP / LOGIN<br/>Email • Password • OTP]
+
+%% Step 2
+C --> D[2. EXPLORE PLATFORM<br/>Places • Culture • Transport]
+
+%% Step 3
+D --> E[3. AI TRAVEL ASSISTANT<br/>Multilingual • Itinerary Planning]
+
+%% Step 4
+E --> F[4. TRANSPORT & DAY-WISE PLAN<br/>Bus • E-Rickshaw • Taxi • Eco Score]
+
+%% Step 5
+F --> G[5. SELECT EXPERIENCE<br/>Events • Cultural Shows • Marketplace]
+
+%% Step 6
+G --> H[6. GUIDE SELECTION<br/>Availability Check]
+
+%% Verification
+H --> I[7. GUIDE VERIFICATION<br/>Admin + Blockchain]
+
+I -->|Verified| J[8. PAYMENT & BOOKING<br/>Razorpay]
+I -->|Rejected| H
+
+%% Step 9
+J --> K[9. TRIP PROGRESS & FEEDBACK<br/>Live Updates]
+
+%% Step 10
+K --> L[10. SOS & SAFETY SYSTEM<br/>Twilio Alerts]
+
+%% Partner Flow
+B --> M[PARTNER REGISTRATION]
+
+M --> N[Upload Documents<br/>Aadhaar / License]
+
+N --> O[OCR + e-KYC<br/>Tesseract + AI]
+
+O --> P[Blockchain Hash<br/>Polygon Network]
+
+P --> Q[Digital Certificate + QR]
+
+Q --> R[Partner Dashboard<br/>List Services]
+
+%% Government Flow
+B --> S[GOVERNMENT DASHBOARD]
+
+S --> T[Real-Time Monitoring<br/>Revenue • Footfall • Eco Transport • Partners]
 
 ---
 
