@@ -97,61 +97,139 @@ Designed to enable:
 
 ---
 
-flowchart TD
+**The following diagram illustrates the end-to-end workflow of the ExploreJh Smart Tourism Platform, covering users, partners, and government monitoring**
 
-%% Title Node
-A[EXPLOREJH WORKFLOW]
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                              EXPLOREJH WORKFLOW                                │
+└───────────────────────────────────────────────────────────────────────────────┘
 
-%% User Entry
-A --> B[USER]
+                                  ┌──────────────┐
+                                  │     USER     │
+                                  └──────┬───────┘
+                                         │
+         ┌───────────────────────────────┼───────────────────────────────┐
+         │                               │                               │
+         ▼                               ▼                               ▼
+┌────────────────────┐      ┌─────────────────────┐     ┌────────────────────┐
+│ 1. SIGN UP / LOGIN │      │ 2. EXPLORE PLATFORM │     │ 3. AI ASSISTANT    │
+│                    │      │                     │     │                    │
+│ Email / OTP        │────▶│ Places / Culture    │────▶│ Multilingual AI    │
+│ Secure Auth        │      │ Transport / Events  │     │ Itinerary Planner  │
+└────────────────────┘      └─────────────────────┘     └──────────┬─────────┘
+                                                                  │
+                                          ┌───────────────────────┘
+                                          ▼
+                           ┌──────────────────────────────────┐
+                           │ 4. TRANSPORT & DAY-WISE PLAN     │
+                           │                                  │
+                           │ Bus • E-Rickshaw • Taxi          │
+                           │ Eco Score + Cheapest Route       │
+                           └──────────────┬───────────────────┘
+                                          │
+                                          ▼
+                           ┌──────────────────────────────────┐
+                           │ 5. SELECT EXPERIENCE             │
+                           │                                  │
+                           │ Cultural Events • Marketplace    │
+                           │ Local Shops & Activities         │
+                           └──────────────┬───────────────────┘
+                                          │
+                                          ▼
+                           ┌──────────────────────────────────┐
+                           │ 6. GUIDE SELECTION               │
+                           │                                  │
+                           │ Availability Check               │
+                           └──────────────┬───────────────────┘
+                                          │
+                                          ▼
+                           ┌──────────────────────────────────┐
+                           │ 7. VERIFICATION                  │
+                           │                                  │
+                           │ Admin + Blockchain Validation    │
+                           └──────────────┬───────────────────┘
+                              Verified ✓  │   ✗ Rejected
+                                          │
+                                          ▼
+                           ┌──────────────────────────────────┐
+                           │ 8. PAYMENT & BOOKING             │
+                           │                                  │
+                           │ Razorpay Secure Payment          │
+                           └──────────────┬───────────────────┘
+                                          │
+                                          ▼
+                           ┌──────────────────────────────────┐
+                           │ 9. TRIP PROGRESS & FEEDBACK      │
+                           │                                  │
+                           │ Live Updates & Ratings           │
+                           └──────────────┬───────────────────┘
+                                          │
+                                          ▼
+                           ┌──────────────────────────────────┐
+                           │ 10. SOS & SAFETY SYSTEM          │
+                           │                                  │
+                           │ Emergency Alerts via Twilio      │
+                           └──────────────────────────────────┘
 
-%% Step 1
-B --> C[1. SIGN UP / LOGIN<br/>Email • Password • OTP]
 
-%% Step 2
-C --> D[2. EXPLORE PLATFORM<br/>Places • Culture • Transport]
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                          PARTNER ONBOARDING FLOW                              │
+└───────────────────────────────────────────────────────────────────────────────┘
 
-%% Step 3
-D --> E[3. AI TRAVEL ASSISTANT<br/>Multilingual • Itinerary Planning]
+┌────────────────────┐
+│ Partner Register   │
+│ (Guide / Driver /  │
+│  Artisan)          │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│ Upload Documents   │
+│ Aadhaar / License  │
+└─────────┬──────────┘
+          │
+          ▼
+┌──────────────────────────────────┐
+│ OCR + e-KYC Verification         │
+│ AI Validation                    │
+└─────────┬────────────────────────┘
+          │
+          ▼
+┌──────────────────────────────────┐
+│ Blockchain Hash (Polygon)        │
+│ Tamper-proof Record              │
+└─────────┬────────────────────────┘
+          │
+          ▼
+┌──────────────────────────────────┐
+│ Digital Certificate + QR Code    │
+└─────────┬────────────────────────┘
+          │
+          ▼
+┌──────────────────────────────────┐
+│ Partner Dashboard                │
+│ List Services / Products         │
+└──────────────────────────────────┘
 
-%% Step 4
-E --> F[4. TRANSPORT & DAY-WISE PLAN<br/>Bus • E-Rickshaw • Taxi • Eco Score]
 
-%% Step 5
-F --> G[5. SELECT EXPERIENCE<br/>Events • Cultural Shows • Marketplace]
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                        GOVERNMENT DASHBOARD FLOW                              │
+└───────────────────────────────────────────────────────────────────────────────┘
 
-%% Step 6
-G --> H[6. GUIDE SELECTION<br/>Availability Check]
+┌────────────────────┐
+│ Govt Login         │
+└─────────┬──────────┘
+          │
+          ▼
+┌──────────────────────────────────────────────────┐
+│ Real-Time Monitoring Dashboard                   │
+│                                                  │
+│ • Tourist Footfall                               │
+│ • Revenue Generated                              │
+│ • Eco-Transport Usage                            │
+│ • Partner Performance                            │
+│ • SOS & Feedback Analytics                       │
+└──────────────────────────────────────────────────┘
 
-%% Verification
-H --> I[7. GUIDE VERIFICATION<br/>Admin + Blockchain]
-
-I -->|Verified| J[8. PAYMENT & BOOKING<br/>Razorpay]
-I -->|Rejected| H
-
-%% Step 9
-J --> K[9. TRIP PROGRESS & FEEDBACK<br/>Live Updates]
-
-%% Step 10
-K --> L[10. SOS & SAFETY SYSTEM<br/>Twilio Alerts]
-
-%% Partner Flow
-B --> M[PARTNER REGISTRATION]
-
-M --> N[Upload Documents<br/>Aadhaar / License]
-
-N --> O[OCR + e-KYC<br/>Tesseract + AI]
-
-O --> P[Blockchain Hash<br/>Polygon Network]
-
-P --> Q[Digital Certificate + QR]
-
-Q --> R[Partner Dashboard<br/>List Services]
-
-%% Government Flow
-B --> S[GOVERNMENT DASHBOARD]
-
-S --> T[Real-Time Monitoring<br/>Revenue • Footfall • Eco Transport • Partners]
 
 ---
 
