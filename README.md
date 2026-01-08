@@ -20,6 +20,7 @@ Traditional tourism portals are outdated and lack personalization. Travelers str
 ---
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/87a36f5f-065d-4759-bda8-d3718eb3bb07" />
 ---
+
 The platform enables travelers to explore trending destinations, discover hidden gems, experience the culture, and support local artisans — while laying groundwork for future smart tourism and AI-based travel assistance.
 
 Unlike conventional static tourism sites, **ExploreJH focuses on:**
@@ -99,6 +100,7 @@ Designed to enable:
 
 **The following diagram illustrates the end-to-end workflow of the ExploreJh Smart Tourism Platform, covering users, partners, and government monitoring**
 
+```text
 ┌───────────────────────────────────────────────────────────────────────────────┐
 │                              EXPLOREJH WORKFLOW                                │
 └───────────────────────────────────────────────────────────────────────────────┘
@@ -230,6 +232,7 @@ Designed to enable:
 │ • SOS & Feedback Analytics                       │
 └──────────────────────────────────────────────────┘
 
+```
 
 ---
 
