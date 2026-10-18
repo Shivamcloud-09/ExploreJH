@@ -290,7 +290,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 | Layer            | Technology                                   |
 |------------------|----------------------------------------------|
-| Frontend         | HTML, CSS, JavaScript                        |
+| Frontend         | React.js, TypeScript                         |
 | UI / Styling     | Tailwind CSS, Framer Motion                  |
 | Icons            | Lucide React                                 |
 | AI Chatbot       | Rasa AI                                      |
